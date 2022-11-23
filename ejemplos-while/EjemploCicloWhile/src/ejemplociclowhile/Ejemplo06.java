@@ -29,11 +29,12 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
-            if (calificacion > 20) {
+            if (calificacion > 20) { //si el numero es mayor a 20 se le asigna 
+                                     //el valor permitido que es 20
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
